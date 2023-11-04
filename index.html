@@ -1,13 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+        .completed{
+            text-decoration: line-through;
+        }
+    </style>
     <title>Project Randomizer</title>
-</head>
-<body>
+  </head>
+  <body>
+    <h1>Random Selector App</h1>
+    <form id="inputForm">
+        <input type="text" id="inputField" placeholder="Enter input" required>
+        <button type="submit" id="submitButton">Submit Input</button>
+    </form>
+
+    <button id="randomButton">Select Random Name</button>
+
+    <h2>Name List:</h2>
+    <ul id="inputsList"></ul>
+
+    <h2>Selected List:</h2>
+    <ul id="selectedList"></ul>
+
+    <h3>Project List</h3>
+    <ul id="projectList"></ul>
 
     <script src="./script.js"></script>
-    
-</body>
+  </body>
 </html>
